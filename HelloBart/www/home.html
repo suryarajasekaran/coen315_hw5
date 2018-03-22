@@ -1,0 +1,123 @@
+<!-- The Same-Origin Policy : Websites are able to perform cross domain requests because,
+ they use CORS or JSONP. CORS or Cross Origin Resource Sharing is a process where restricted resources can be requested
+ from another domain using headers, and these headers need to be given access otherwise they would throw CORS error. The target service
+ tells the browser that it wants to allow cross-origin requests by inserting special HTTP headers in responses. This should be
+ done for preflighted requests as well (I was having a hard time figuring this out how to provide access for preflighted requests for my website)-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>bart.gov</title>
+        <!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no">-->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/flipclock.css') }}">
+        <style>
+            footer {
+                background-color: #FDFEFE;
+                width: 75%;
+                bottom: 0;
+
+                left: 0;
+                position: fixed;
+                background-color:#ADD8BC;
+            }
+            p {
+    white-space: nowrap;
+}
+
+        </style>
+        <style>
+body {
+    background-color: #ADD8E6;
+}
+</style>
+
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+            #map {
+            height: 40%;
+            width: 40%;
+            }
+            /* Optional: Makes the sample page fill the window.*/
+            html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }
+            #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+            }
+        </style>
+    </head>
+
+
+  <body>
+    <header>
+          <img src="../static/img/barttrain.jpeg" alt="barttrain">
+        <!--img src="../static/img/bartlogo.png">
+        <tab1> <img src="../static/img/bartTrainUsed.JPG"> </tab1>
+    <tab1> <img src="../static/img/bartmap.png"> </tab1-->
+    </header>
+
+    <div id="getting-started"></div>
+    <div class="your-clock" id="flipwidget"></div>
+    <!--p id="session"> Message : <p-->
+    <p id="count"> Count : </p>
+    <p id="sessiontime"> </p>
+	   <section style="float:left;width:75%;border:1px solid">
+
+           <b>Select departure and arrival stations below : </b> <br> <br>
+           <b>Departure Station :</b>
+	        <select id="departureStation"><option>Select</option></select> &nbsp; &nbsp;
+           <br><b>Arrival Station :</b>
+            <select id="arrivalStation"><option>Select</option></select><br> <br>
+           <button id="searchSchedules" type="button">Search</button> <br>
+
+
+
+            <p id="results">
+           <p id="fares"> </p>
+           <p id="CO2"> </p>
+           <p id="timetaken">  </p>
+           <p id="bike">  </p>
+           <p id="lineno"> </p>
+
+<!--pre-->
+            <p id = "Countdown"></p>
+
+       </section>
+           <aside id = StationInfo style="font-style:italic;
+			float:right;width:20%;
+			border:1px solid">
+
+                <p>Select source destination</p>
+               <p> to get more info</p>
+
+           </aside>
+    <div id="map"></div>
+    <footer class="footer">
+    <p>&copy;Surya Rajasekaran's Bart website </p>
+    <p>For further details contact <a href="mailto:srajasekaran@scu.edu">srajasekaran@scu.edu</a>.</p>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='js/getStations.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/searchSchedules.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/getStat.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/userSession.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/flipclock.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/flipclock.min.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3LKHtr3-a2SyGDiTPF-LnptvTe-lcySY"></script>
+  </body>
+</html>
+
