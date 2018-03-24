@@ -20,13 +20,18 @@ $.ajax({
             var opt = document.createElement('option');
             opt.innerHTML = dataset[i].name;
             opt.value = dataset[i].abbr;
-           //departureStation.appendChild(opt);
+            if (localStorage.getItem("arrivalStation") == dataset[i].abbr) {
+                opt.selected = true;
+            }
             arrivalStation.appendChild(opt);
         };
         for(var i = 0; i < dataset.length; i++) {
             var opt = document.createElement('option');
             opt.innerHTML = dataset[i].name;
             opt.value = dataset[i].abbr;
+            if (localStorage.getItem("departureStation") == dataset[i].abbr) {
+                opt.selected = true;
+            }
             departureStation.appendChild(opt);
         };
     },

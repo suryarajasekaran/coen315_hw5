@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        <title>bart.gov</title>
+
+        <meta charset="utf-8">
+
+        <!-- style : bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- style : background -->
+        <style>
+            body {
+                background-color: #ADD8E6;
+            }
+        </style>
+
+        <!-- style : flipclock -->
+        <link rel="stylesheet" href="css/flipclock.css">
+
+        <!-- style : googlemaps -->
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+            #map {
+            height: 40%;
+            width: 40%;
+            }
+            /* Optional: Makes the sample page fill the window.*/
+            html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }
+            #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+        <!-- header -->
+        <header>
+            <img src="img/bartlogo.png" alt="barttrain">
+        </header>
+
+        <!-- search info -->
+        <div class="container">
+            <div class="panel panel-default">
+                <h5>From : <small id="from">from</small></h5>
+                <h5>To : <small id="to">to</small></h5>
+                <h5>Fare <small>($)</small> : <small id="fare">fare</small></h5>
+                <h5>CO2 Emission <small>(count)</small>: <small id="co2emission">co2emission</small></h5>
+                <h5>Trip Time <small>(mins)</small>: <small id="triptime">triptime</small></h5>
+            </div>
+        </div>
+
+        <!-- separation bar -->
+        <div class="container">
+            <div class="alert alert-success" role="alert">
+                <strong id="notification">Results</strong>
+            </div>
+        </div>
+
+        <!-- search result -->
+        <div class="container" id="result"></div>
+
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3LKHtr3-a2SyGDiTPF-LnptvTe-lcySY"></script>
+        <script type="text/javascript" src="js/searchResults.js"></script>
+
+
+    </body>
+
+</html>
+
+<!-- junk -->
+<!--
+<div id="getting-started"></div>
+<div class="your-clock" id="flipwidget"></div>
+<div id="map"></div>
+-->

@@ -4,12 +4,16 @@ lat_dest = null;
 lng_dest = null;
 lat_org = null;
 lng_org = null;
-document.getElementById("map").innerHTML = " ";
+//document.getElementById("map").innerHTML = " ";
 document.getElementById("flipwidget").innerHTML = " ";
-setInterval(function () {document.getElementById("searchSchedules").onclick();}, 30000);
+//setInterval(function () {document.getElementById("searchSchedules").onclick();}, 30000);
+
 document.getElementById("searchSchedules").onclick = function () {
-        var filterDepartureStation = document.getElementById("departureStation").value;
-        var filterArrivalStation = document.getElementById("arrivalStation").value;
+        //var filterDepartureStation = document.getElementById("departureStation").value;
+        //var filterArrivalStation = document.getElementById("arrivalStation").value;
+
+var filterDepartureStation = localStorage.getItem("departureStation")
+var filterArrivalStation = localStorage.getItem("arrivalStation")
 
         if (filterDepartureStation =='Select' || filterArrivalStation=="Select") {
             document.getElementById("results").innerHTML = "Select both Arrival and Departure station ";
