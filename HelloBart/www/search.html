@@ -62,6 +62,7 @@
         <!-- search info -->
         <div class="container">
             <div class="panel panel-default">
+                <h4>Trip  Information</h4>
                 <h5>From : <small id="from">from</small></h5>
                 <h5>To : <small id="to">to</small></h5>
                 <h5>Fare <small>($)</small> : <small id="fare">fare</small></h5>
@@ -70,10 +71,40 @@
             </div>
         </div>
 
+        <!-- departure station info -->
+        <div class="container">
+            <div class="panel panel-default">
+                <h4>Departure Station Information</h4>
+                <h5>Name : <small id="name">name</small></h5>
+                <h5>Intro : <small id="intro">intro</small></h5>
+                <h5>address : <small id="address">address</small></h5>
+                <h5>city : <small id="city">city</small></h5>
+                <h5>county : <small id="county">county</small></h5>
+                <h5>state : <small id="state">state</small></h5>
+                <h5>zipcode : <small id="zipcode">zipcode</small></h5>
+            </div>
+        </div>
+
         <!-- separation bar -->
         <div class="container">
             <div class="alert alert-success" role="alert">
                 <strong id="notification">Results</strong>
+            </div>
+        </div>
+
+        <!-- timer widget -->
+        <div class="container">
+            <div class="panel panel-default">
+                <h4>Timer</h4>
+                <div class="your-clock" id="flipwidget"></div>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="container">
+            <div class="panel panel-default">
+                <h4>Map</h4>
+                <div id="map"></div>
             </div>
         </div>
 
@@ -85,7 +116,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3LKHtr3-a2SyGDiTPF-LnptvTe-lcySY"></script>
         <script type="text/javascript" src="js/searchResults.js"></script>
-
+        <script type="text/javascript" src="js/flipclock.js"></script>
+        <script type="text/javascript" src="js/flipclock.min.js"></script>
 
     </body>
 
