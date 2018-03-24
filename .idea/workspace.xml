@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="206bc03d-b4bd-4f7d-ba03-cbd0df912686" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloBart/platforms/browser/www/js/getStat.js" afterPath="$PROJECT_DIR$/HelloBart/platforms/browser/www/js/getStat.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloBart/platforms/browser/www/js/searchResults.js" afterPath="$PROJECT_DIR$/HelloBart/platforms/browser/www/js/searchResults.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloBart/platforms/browser/www/search.html" afterPath="$PROJECT_DIR$/HelloBart/platforms/browser/www/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloBart/www/js/getStat.js" afterPath="$PROJECT_DIR$/HelloBart/www/js/getStat.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloBart/www/js/searchResults.js" afterPath="$PROJECT_DIR$/HelloBart/www/js/searchResults.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloBart/www/search.html" afterPath="$PROJECT_DIR$/HelloBart/www/search.html" />
     </list>
@@ -27,11 +25,10 @@
       <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HelloBart/www/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="865">
-              <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+            <state relative-caret-position="190">
+              <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#1;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -41,14 +38,14 @@
       <file leaf-file-name="searchResults.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelloBart/www/js/searchResults.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-746">
-              <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+            <state relative-caret-position="645">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <element signature="e#0#8020#0" expanded="false" />
-                <element signature="e#0#8020#0" expanded="false" />
-                <element signature="e#0#8020#0" expanded="false" />
-                <element signature="e#0#8020#0" expanded="false" />
-                <element signature="e#0#8020#0" expanded="false" />
+                <element signature="e#0#8022#0" expanded="false" />
+                <element signature="e#0#8022#0" expanded="false" />
+                <element signature="e#0#8022#0" expanded="false" />
+                <element signature="e#0#8022#0" expanded="false" />
+                <element signature="e#0#8022#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,7 +54,7 @@
       <file leaf-file-name="searchSchedules.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelloBart/www/js/searchSchedules.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="167">
               <caret line="152" column="33" lean-forward="false" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="33" />
               <folding />
             </state>
@@ -125,8 +122,9 @@
       <find>addWidgetFlip</find>
       <find>timer</find>
       <find>initMa</find>
-      <find>calculateAndDisplayRoute</find>
       <find>flip</find>
+      <find>init</find>
+      <find>calculateAndDisplayRoute</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,8 +141,8 @@
         <option value="$PROJECT_DIR$/HelloBart/www/index.html" />
         <option value="$PROJECT_DIR$/HelloBart/www/js/getStat.js" />
         <option value="$PROJECT_DIR$/HelloBart/www/js/searchSchedules.js" />
-        <option value="$PROJECT_DIR$/HelloBart/www/search.html" />
         <option value="$PROJECT_DIR$/HelloBart/www/js/searchResults.js" />
+        <option value="$PROJECT_DIR$/HelloBart/www/search.html" />
       </list>
     </option>
   </component>
@@ -638,28 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloBart/www/js/searchResults.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-746">
-          <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#8020#0" expanded="false" />
-            <element signature="e#0#8020#0" expanded="false" />
-            <element signature="e#0#8020#0" expanded="false" />
-            <element signature="e#0#8020#0" expanded="false" />
-            <element signature="e#0#8020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelloBart/www/js/searchSchedules.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="152" column="33" lean-forward="false" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelloBart/www/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -668,13 +644,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HelloBart/www/js/searchResults.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#8022#0" expanded="false" />
+            <element signature="e#0#8022#0" expanded="false" />
+            <element signature="e#0#8022#0" expanded="false" />
+            <element signature="e#0#8022#0" expanded="false" />
+            <element signature="e#0#8022#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloBart/www/js/searchSchedules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="152" column="33" lean-forward="false" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HelloBart/www/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
-          <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+        <state relative-caret-position="190">
+          <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>

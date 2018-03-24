@@ -3,6 +3,45 @@ lng_dest = null;
 lat_org = null;
 lng_org = null;
 
+function initMap() {
+    console.log("init"+lat_org)
+    console.log("init"+lng_org)
+    if (lat_org == null || lat_dest == null || lng_org == null || lng_dest == null){
+        document.getElementById("map").innerHTML = " ";
+   }
+   else{
+   document.getElementById("map").innerHTML = " ";
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+    var directionsService = new google.maps.DirectionsService;
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: {lat: lat_org, lng: lng_org}
+    });
+    directionsDisplay.setMap(map);
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  }
+}
+
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+    console.log("calc"+lat_org)
+    console.log("calc"+lng_org)
+    var selectedMode = "TRANSIT";
+    directionsService.route({
+      origin: {lat: lat_org, lng: lng_org},
+      destination: {lat: lat_dest, lng: lng_dest},
+      travelMode: google.maps.TravelMode[selectedMode],
+      transitOptions: {
+        modes: ['RAIL']
+      },
+    }, function(response, status) {
+      if (status == 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+}
+
 function loadStationInfo() {
     var departureStation = localStorage.getItem("departureStation");
     var arrivalStation = localStorage.getItem("arrivalStation");
@@ -179,44 +218,7 @@ function convert_to_24h(time_str) {
     return [hours, minutes];
 };
 
-function initMap() {
-    console.log("init"+lat_org)
-    console.log("init"+lng_org)
-    if (lat_org == null || lat_dest == null || lng_org == null || lng_dest == null){
-        document.getElementById("map").innerHTML = " ";
-   }
-   else{
-   document.getElementById("map").innerHTML = " ";
-    var directionsDisplay = new google.maps.DirectionsRenderer;
-    var directionsService = new google.maps.DirectionsService;
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
-      center: {lat: lat_org, lng: lng_org}
-    });
-    directionsDisplay.setMap(map);
-    calculateAndDisplayRoute(directionsService, directionsDisplay);
-  }
-}
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-    console.log("calc"+lat_org)
-    console.log("calc"+lng_org)
-    var selectedMode = "TRANSIT";
-    directionsService.route({
-      origin: {lat: lat_org, lng: lng_org},
-      destination: {lat: lat_dest, lng: lng_dest},
-      travelMode: google.maps.TravelMode[selectedMode],
-      transitOptions: {
-        modes: ['RAIL']
-      },
-    }, function(response, status) {
-      if (status == 'OK') {
-        directionsDisplay.setDirections(response);
-      } else {
-        window.alert('Directions request failed due to ' + status);
-      }
-    });
-}
 
 window.onload = function() {
   loadStationInfo();
