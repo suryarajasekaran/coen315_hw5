@@ -85,13 +85,13 @@ function loadResults() {
                     var div = document.createElement('div');
                     div.className = "panel panel-default";
                     var leg = document.createElement('h5');
-                    leg.innerHTML = "Leg : "+ (i+1)
-                    var departureTime = document.createElement('h5');
-                    departureTime.innerHTML = "Departure Time : "+ dataset[i]["@origTimeMin"]
-                    var arrivalTime = document.createElement('h5');
-                    arrivalTime.innerHTML = "Arrival Time : "+ dataset[i]["@destTimeMin"]
+                    leg.innerHTML = "Leg : "+ (i+1);
                     div.appendChild(leg);
+                    var departureTime = document.createElement('h5');
+                    departureTime.innerHTML = "Departure Time : "+ dataset[i]["@origTimeMin"];
                     div.appendChild(departureTime);
+                    var arrivalTime = document.createElement('h5');
+                    arrivalTime.innerHTML = "Arrival Time : "+ dataset[i]["@destTimeMin"];
                     div.appendChild(arrivalTime);
                     result.appendChild(div);
                 }
